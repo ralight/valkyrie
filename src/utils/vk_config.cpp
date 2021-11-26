@@ -106,7 +106,7 @@ const QString& VkCfg::appName()      { return _name; }
   Valkyrie application title
 */
 const QString VkCfg::appTitle()
-{ 
+{
    QString title = _name;
    return title.replace( 0, 1, title[0].toUpper() );
 }
@@ -393,7 +393,7 @@ void VkCfgGlbl::writeConfigDefaults()
    vk_assert( allKeys().count() == 0 );
 
 //TODO: switch to using sections, and figure out backwards-compatibility issues...
-   
+
    setValue( "config_glbl_version",    VkCfg::glblCfgVersion() );
    setValue( "mainwindow_size",        QSize( 600, 600 ) );
    setValue( "mainwindow_pos",         QPoint( 400, 0 ) );
@@ -425,7 +425,7 @@ void VkCfgGlbl::writeConfigDefaults()
    setValue( "filefilters/handbook_docdir-default", "" );
    setValue( "filefilters/project_path", "Valkyrie Projects (*." + VkCfg::filetype() + ")" );
    setValue( "filefilters/project_path-default", "" );
-   
+
    sync();
 }
 
@@ -658,7 +658,7 @@ bool VkCfgProj::checkVersionOk( unsigned int new_version )
 void VkCfgProj::replaceConfig( QSettings* new_cfg )
 {
    vk_assert( new_cfg );
-   
+
    VK_DEBUG( "Replacing current config with: %s", qPrintable( new_cfg->fileName() ) );
 
    // replace existing QSettings

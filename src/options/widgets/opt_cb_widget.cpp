@@ -44,7 +44,6 @@ CbWidget::CbWidget( QWidget* parent, VkOption* vkopt, bool mklabel )
    m_widg    = m_combo;
    
    m_combo->setInsertPolicy( QComboBox::NoInsert );
-   m_combo->setAutoCompletion( true );
    m_combo->addItems( m_opt->possValues );
    m_combo->setCurrentIndex( m_currIdx );
    

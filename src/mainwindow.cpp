@@ -20,7 +20,6 @@
 
 #include <QApplication>
 #include <QColor>
-#include <QColorGroup>
 #include <QEvent>
 #include <QFileDialog>
 #include <QGroupBox>

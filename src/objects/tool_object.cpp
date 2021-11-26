@@ -51,6 +51,7 @@ stopProcess()
 #include <QKeySequence>
 #include <QString>
 #include <QStringList>
+#include <unistd.h>
 
 
 #if 1

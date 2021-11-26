@@ -25,6 +25,7 @@
 #include "utils/vk_utils.h"
 
 #include <pwd.h>     // getpwuid
+#include <unistd.h>  // getuid
 
 #include <QColor>
 #include <QDir>

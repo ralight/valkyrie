@@ -22,6 +22,7 @@
 #include "utils/vk_config.h"        // vkname()
 
 #include <cstdlib>                  // exit, mkstemp, free/malloc, etc
+#include <unistd.h>
 
 #include <QDateTime>
 #include <QFile>
@@ -536,7 +537,7 @@ QString vkDlgGetFile( QWidget* parent,
    dlg.setFileMode(QFileDialog::AnyFile);
    dlg.setViewMode(QFileDialog::Detail);
    dlg.setAcceptMode( mode );
-   dlg.selectFilter( filter );
+   dlg.selectNameFilter( filter );
 
    // Run dialog - get filename to save to: asks for overwrite confirmation
    QString fname;
